@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria College</title>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZBP2HRDJC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HZBP2HRDJC');
+</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4e54c8;
+      --secondary: #8f94fb;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+    }
+    .hero-text {
+      padding: 60px 0;
+    }
+    .hero-text h1 {
+      text-shadow: 2px 2px #00000020;
+    }
+    .highlight-box {
+      background-color: #f1f3f5;
+      border-left: 5px solid var(--primary);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+    }
+    .highlight-box:hover {
+      transform: translateY(-6px);
+      background: #e3e7fd;
+      border-left-color: var(--secondary);
+    }
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+    }
+    .bg-section {
+      background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+      padding: 60px 0;
+    }
+    footer {
+      background-color: var(--primary);
+    }
+    .nav-link {
+      transition: all 0.3s;
+    }
+    .nav-link:hover {
+      color: #fffacd !important;
+    }
+    .btn-light:hover {
+      background-color: var(--secondary);
+      color: white;
+    }
+
+    .course-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .course-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  }
+
+  .course-bca { background: #5e60ce; }
+  .course-bba { background: #4361ee; }
+  .course-mca { background: #4cc9f0; }
+  .course-bsc { background: #3a0ca3; }
+
+  .testimonial-card {
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    border-left: 5px solid #0d6efd;
+    transition: transform 0.3s;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: var(--primary);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Maria College</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center hero-text animate__animated animate__fadeInDown">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Welcome to Maria College</h1>
+      <p class="lead">Empowering education for a brighter tomorrow.</p>
+      <a href="about.html" class="btn btn-light btn-lg mt-3 animate__animated animate__pulse animate__infinite">Learn More</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container text-center py-5">
+      <h2 class="mb-4 animate__animated animate__fadeInUp">Why Choose Maria College?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="highlight-box h-100">
+            <h5>Experienced Faculty</h5>
+            <p>Our educators are seasoned professionals who provide mentorship and hands-on guidance.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight-box h-100">
+            <h5>Modern Infrastructure</h5>
+            <p>Campus includes smart classrooms, computer labs, high-speed internet, and a digital library.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight-box h-100">
+            <h5>Career Development</h5>
+            <p>Placement training, industrial visits, and expert talks prepare students for real-world careers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-section text-center">
+      <div class="container">
+        <h2 class="mb-4">Popular Courses</h2>
+        <div class="row" id="course-section">
+            <div class="col-sm-6 col-lg-3 mb-4 animate__animated" data-animate="fadeInLeft">
+                <div class="card h-100 course-card course-bca">
+                    <div class="card-body">
+                    <h5 class="card-title">BCA</h5>
+                    <p class="card-text">Learn programming, database, web development, and prepare for IT careers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 animate__animated" data-animate="fadeInLeft">
+                <div class="card h-100 course-card course-bba">
+                    <div class="card-body">
+                    <h5 class="card-title">BBA</h5>
+                    <p class="card-text">Study business strategy, marketing, and finance to become future managers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 animate__animated" data-animate="fadeInRight">
+                <div class="card h-100 course-card course-mca">
+                    <div class="card-body">
+                    <h5 class="card-title">MCA</h5>
+                    <p class="card-text">Master-level training in software engineering, analytics, and AI systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 animate__animated" data-animate="fadeInRight">
+                <div class="card h-100 course-card course-bsc">
+                    <div class="card-body">
+                    <h5 class="card-title">B.Sc IT</h5>
+                    <p class="card-text">In-depth curriculum covering system design, networking, and cybersecurity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Student Testimonials</h2>
+        <div class="row" id="testimonial-section">
+            <div class="col-md-6 mb-4 animate__animated" data-animate="fadeInUp">
+                <div class="p-4 rounded shadow-sm testimonial-card">
+                    <p class="fst-italic">"Maria College helped me build a strong foundation for my IT career. Faculty are supportive and experienced!"</p>
+                    <p class="fw-bold mb-0">– Sathya M, CS Graduate</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4 animate__animated" data-animate="fadeInUp">
+                <div class="p-4 rounded shadow-sm testimonial-card">
+                    <p class="fst-italic">"The environment at Maria College fosters learning, innovation, and confidence. Highly recommended!"</p>
+                    <p class="fw-bold mb-0">– Priya K, BBA Graduate</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Maria College. All rights reserved.</p>
+      <small>Developed for educational demonstration</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleScrollAnimation() {
+      document.querySelectorAll('[data-animate]').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          el.classList.add('animate__' + el.dataset.animate);
+        }
+      });
+    }
+    document.addEventListener('scroll', handleScrollAnimation);
+    document.addEventListener('DOMContentLoaded', handleScrollAnimation);
+  </script>
+</body>
+</html>

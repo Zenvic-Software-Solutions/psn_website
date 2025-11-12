@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses | Maria College</title>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZBP2HRDJC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HZBP2HRDJC');
+</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 0;
+    }
+    .course-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 12px;
+    }
+    .course-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+    .course-card .card-body {
+      color: white;
+    }
+    .apply-btn {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 16px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+    .apply-btn:hover {
+      background-color: #ffc107;
+      color: #000;
+    }
+
+    /* Color Variants */
+    .bg-bca     { background-color: #0077b6; }
+    .bg-bba     { background-color: #0096c7; }
+    .bg-mca     { background-color: #023e8a; }
+    .bg-bsc     { background-color: #03045e; }
+    .bg-maths   { background-color: #6a4c93; }
+    .bg-ai      { background-color: #9d0208; }
+    .bg-ds      { background-color: #006d77; }
+    .bg-bcom    { background-color: #bc6c25; }
+    .bg-mba     { background-color: #6a994e; }
+    .bg-english { background-color: #8a4fff; }
+    .bg-psy     { background-color: #d62828; }
+    .bg-bio     { background-color: #588157; }
+
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Maria College</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center animate__animated animate__fadeInDown">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Explore Our Courses</h1>
+      <p class="lead">Discover academic excellence across disciplines</p>
+    </div>
+  </header>
+
+  <!-- Courses Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4" id="course-list">
+        <!-- Repeatable Course Card -->
+        <!-- Sample card below, duplicate and adjust content and class -->
+
+        <!-- BCA -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-bca">
+            <div class="card-body">
+              <h5 class="card-title">BCA</h5>
+              <p class="card-text">Learn programming languages, app & web development, database design, and software engineering through hands-on projects.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BBA -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-bba">
+            <div class="card-body">
+              <h5 class="card-title">BBA</h5>
+              <p class="card-text">Develop leadership and managerial skills through real-world case studies, business simulations, marketing projects, and internships.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MCA -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-mca">
+            <div class="card-body">
+              <h5 class="card-title">MCA</h5>
+              <p class="card-text">Advanced computer science training with AI/ML, system design, networking, and software project lifecycle management.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BSc IT -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-bsc">
+            <div class="card-body">
+              <h5 class="card-title">B.Sc IT</h5>
+              <p class="card-text">Study operating systems, databases, network security, and ethical hacking with practical lab sessions and certifications.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maths -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-maths">
+            <div class="card-body">
+              <h5 class="card-title">B.Sc Mathematics</h5>
+              <p class="card-text">Emphasizes analytical and logical skills with coursework in calculus, probability, number theory, and real-world modeling.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & ML -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-ai">
+            <div class="card-body">
+              <h5 class="card-title">AI & ML</h5>
+              <p class="card-text">Hands-on experience building machine learning models, neural networks, and deploying AI in real-time apps using TensorFlow & Python.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-ds">
+            <div class="card-body">
+              <h5 class="card-title">Data Science</h5>
+              <p class="card-text">Gain expertise in data wrangling, statistical analysis, machine learning, SQL, Power BI, and storytelling with data.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- B.Com -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-bcom">
+            <div class="card-body">
+              <h5 class="card-title">B.Com</h5>
+              <p class="card-text">Covers financial management, cost accounting, taxation laws, economics, and corporate governance with practical accounting software.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MBA -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-mba">
+            <div class="card-body">
+              <h5 class="card-title">MBA</h5>
+              <p class="card-text">A dual-specialization MBA program offering real-time business simulations, global case analysis, and leadership workshops.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BA English -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-english">
+            <div class="card-body">
+              <h5 class="card-title">BA English</h5>
+              <p class="card-text">Dive into classical and modern literature, critical theory, creative writing, and communication skills for media and academia.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Psychology -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-psy">
+            <div class="card-body">
+              <h5 class="card-title">B.Sc Psychology</h5>
+              <p class="card-text">Study cognitive development, clinical assessment, behavioral therapies, and neuropsychology with practical lab and internships.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- New: Biotechnology -->
+        <div class="col-md-6 col-lg-4 animate__animated" data-animate="fadeInUp">
+          <div class="card course-card bg-bio">
+            <div class="card-body">
+              <h5 class="card-title">B.Sc Biotechnology</h5>
+              <p class="card-text">Hands-on molecular biology, genetics, bioinformatics, microbiology, and lab research to prepare for biomedical careers or postgrad study.</p>
+              <a href="contact.html" class="btn apply-btn">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Maria College. All rights reserved.</p>
+      <small>Designed for educational purposes</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleScrollAnimation() {
+      document.querySelectorAll('[data-animate]').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          el.classList.add('animate__' + el.dataset.animate);
+        }
+      });
+    }
+    document.addEventListener('scroll', handleScrollAnimation);
+    document.addEventListener('DOMContentLoaded', handleScrollAnimation);
+  </script>
+</body>
+</html>
