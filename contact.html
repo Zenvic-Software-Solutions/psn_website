@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Maria College</title>
+  <title>Contact | PSN College</title>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZBP2HRDJC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HZBP2HRDJC');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZBP2HRDJC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HZBP2HRDJC');
+  </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
   <style>
@@ -20,7 +19,7 @@
       font-family: 'Segoe UI', sans-serif;
     }
     header {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
+      background: linear-gradient(to right, #004aad, #0078d4);
       color: white;
       padding: 60px 0;
     }
@@ -28,14 +27,18 @@
       border-radius: 10px;
     }
     .btn-primary {
-      background-color: #2575fc;
+      background-color: #0078d4;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #005bb5;
     }
     .contact-section {
       background: #f8f9fa;
       padding: 60px 0;
     }
     footer {
-      background-color: #0d6efd;
+      background-color: #004aad;
       color: white;
       padding: 20px 0;
     }
@@ -44,9 +47,9 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color:#004aad;">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Maria College</a>
+      <a class="navbar-brand fw-bold" href="index.html">PSN College</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,7 +68,7 @@
   <header class="text-center animate__animated animate__fadeInDown">
     <div class="container">
       <h1 class="display-4 fw-bold">Contact Us</h1>
-      <p class="lead">We're here to help you with your queries</p>
+      <p class="lead">We’re here to assist you with admissions, academics, or general queries.</p>
     </div>
   </header>
 
@@ -78,31 +81,35 @@
           <form>
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your full name">
+              <input type="text" class="form-control" id="name" placeholder="Your full name" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your email address">
+              <input type="email" class="form-control" id="email" placeholder="Your email address" required>
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Subject of your message">
+              <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."></textarea>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary px-4">Send Message</button>
           </form>
         </div>
         <div class="col-lg-6">
           <h3 class="mb-4">College Information</h3>
-          <p><strong>Address:</strong> 123 College Road, Chennai, Tamil Nadu, India</p>
+          <p><strong>Address:</strong> PSN College of Engineering, Tirunelveli, Tamil Nadu, India</p>
           <p><strong>Phone:</strong> +91 98765 43210</p>
-          <p><strong>Email:</strong> info@mariacollege.edu.in</p>
+          <p><strong>Email:</strong> info@psncollege.edu.in</p>
           <p><strong>Office Hours:</strong> Mon - Sat, 9:00 AM - 5:00 PM</p>
           <div class="mt-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.4166461390905!2d77.5580449!3d8.509164199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04430035c2a807%3A0xb4d4604f3e635057!2sZenvic%20Software%20Solutions%20PVT%20LTD!5e1!3m2!1sen!2sin!4v1754214989350!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.4166461390905!2d77.5580449!3d8.509164199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04430035c2a807%3A0xb4d4604f3e635057!2sZenvic%20Software%20Solutions%20PVT%20LTD!5e1!3m2!1sen!2sin!4v1754214989350!5m2!1sen!2sin" 
+              width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
       </div>
@@ -112,7 +119,7 @@
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      <p class="mb-1">&copy; 2025 Maria College. All rights reserved.</p>
+      <p class="mb-1">&copy; 2025 PSN College. All rights reserved.</p>
       <small>Designed for educational purposes</small>
     </div>
   </footer>
